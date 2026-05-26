@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Project data — large, often refreshed, not source-controlled
+data/raw/
+data/processed/
+data/cache/
+data/tmp/
+*.sqlite
+*.db
+*.parquet
+
+# Generated figures and tables — regenerate from code
+output/
+figures/
+tables/
+
+# Secrets and credentials — never commit
+.env
+.env.*
+!.env.example
+*.secrets
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Claude Code runtime artifacts
+.claude/scheduled_tasks.lock
+.playwright-mcp/
+
+# PIA artifacts — keep response PDFs out of the repo; track them in data/raw/
+*.eml
